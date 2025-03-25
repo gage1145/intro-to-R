@@ -149,3 +149,16 @@ my_function <- function(name) {
   return(paste("Hello,", name, "!"))
 }
 my_function("Alice")
+
+
+# 8. Exercises ------------------------------------------------------------
+
+# 1. Create a new data frame with three columns: "ID", "Name", and "Score".
+#    Fill it with at least three rows of data.
+
+# 2. Modify an existing vector by adding a new element.
+
+# 3. Use ggplot2 to create:
+#    a) A scatter plot of "mpg" vs. "hp" from `data.csv` (already loaded as `data`).
+#    b) A bar plot showing the count of cars for each cylinder category (`cyl` column).
+
