@@ -172,6 +172,10 @@ rbind(x,y)
 
 
 
+# 6. Basic Data Structures: Lists -----------------------------------------
+
+
+
 
 vec
 vec[2] # Access second element
