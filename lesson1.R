@@ -90,7 +90,7 @@ typeof(fun_var)
 
 
 
-# 4. Basic Data Structures ------------------------------------------------
+# 4. Basic Data Structures: Vectors ---------------------------------------
 
 
 
