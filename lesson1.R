@@ -163,6 +163,15 @@ matrix(1:16, nrow = 4, ncol = 4)
 m <- 1:16
 dim(m) <- c(4,4)
 
+# Bind columns and rows using cbind() and rbind().
+x <- 1:3
+y <- 10:12
+cbind(x,y)
+# or
+rbind(x,y)
+
+
+
 
 vec
 vec[2] # Access second element
