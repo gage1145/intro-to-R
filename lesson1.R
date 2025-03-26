@@ -148,6 +148,21 @@ c(10+0i, 10L)
 
 
 
+# Matrices are a special vector in R. They are not a separate class of object
+# but simply a vector but now with dimensions added on to it. Matrices have rows
+# and columns.
+m <- matrix(nrow = 2, ncol = 2)
+dim(m)
+# same as
+attributes(m)
+
+# Matrices are constructed column-wise.
+matrix(1:16, nrow = 4, ncol = 4)
+
+# Another way to construct a matrix
+m <- 1:16
+dim(m) <- c(4,4)
+
 
 vec
 vec[2] # Access second element
