@@ -94,8 +94,22 @@ typeof(fun_var)
 
 
 
-# Vectors
-# Vectors and basic indexing
+# A vector is the most common and basic data structure in R and is pretty much
+# the workhorse of R. Vectors can be of two types:
+  
+# - atomic vectors
+# - lists
+
+# Atomic Vectors: all elements are of the same type.
+vector()
+vector(length = 10)
+vector("character", 10)
+vector("numeric", 10)
+vector("integer", 10)
+vector("logical", 10)
+vector("complex", 10)
+
+# Making vectors with the c() function.
 vec <- c(1L, 2L, 3L, 4L, 5L)
 # Alternatively
 vec <- 1:5
