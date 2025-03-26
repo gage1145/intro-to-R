@@ -50,6 +50,23 @@ log10(10)
 
 
 
+# To make the best of the R language, you'll need a strong understanding of the 
+# basic data types and data structures and how to operate on those.
+
+# Very Important to understand because these are the things you will manipulate 
+# on a day-to-day basis in R. Most common source of frustration among beginners.
+
+# Everything in R is an object.
+
+# R has 5 basic atomic classes
+
+# - logical (e.g., TRUE, FALSE)
+# - integer (e.g,, 2L, as.integer(3))
+# - numeric (real or decimal) (e.g, 2, 2.0, pi)
+# - complex (e.g, 1 + 0i, 1 + 4i)
+# - character (e.g, "a", "swc")
+
+
 # Assigning variables (`<-` vs. `=`)
 x <- 10
 y = 5
