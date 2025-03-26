@@ -34,6 +34,7 @@
 # - Script Editor, Console, Environment, Plots/Help/Viewer panels
 
 # Running R code directly in the console
+# Copy this code into the terminal and press Enter.
 print("Hello, world!")
 
 # Basic operations in R
