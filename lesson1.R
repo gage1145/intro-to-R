@@ -262,6 +262,28 @@ df_["id"]
 df_$id
 df_[["id"]]
 
+# Naming objects
+
+# Rename data frame columns
+colnames(df_) <- c("Letters", "index", "dist", "comp")
+
+# Naming a vector
+x <- 1:3
+names(x) <- c("rich", "daniel", "diego")
+x
+
+# Naming a list
+x <- as.list(1:10)
+names(x) <- letters[seq(x)]
+x
+
+# Naming matrix dimensions
+m <- matrix(1:4, nrow = 2)
+# First element is row names, second is column names.
+dimnames(m) <- list(c("a", "b"), c("c", "d"))
+
+
+
 
 
 
