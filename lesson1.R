@@ -232,6 +232,14 @@ unclass(fct)
 
 
 
+# A data frame is a very important data type in R. It's pretty much the de facto 
+# data structure for most tabular data.
+
+# A data frame is a special type of list where every element of a list has the 
+# same length.
+
+df_ <- data.frame(id = LETTERS[1:26], x = 1:26, y = rnorm(26), z = 1+2i)
+
 
 
 
