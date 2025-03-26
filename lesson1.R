@@ -220,6 +220,14 @@ fct <- factor(
   levels = c("small", "medium", "large")
 )
 
+# Frequency table
+table(fct)
+
+# Strip out the class information
+unclass(fct)
+
+
+
 
 
 
