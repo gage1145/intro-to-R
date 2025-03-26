@@ -207,6 +207,19 @@ lst <- list(list(list(list())))
 
 
 
+# Factors are special vectors that represent categorical data.
+# Factors can only contain pre-defined values.
+# Factors can be ordered or unordered.
+
+# Unordered example
+fct <- factor(c("male", "female"))
+
+# Ordered example
+fct <- factor(
+  c("small", "medium", "large", "small", "large", "small"), 
+  levels = c("small", "medium", "large")
+)
+
 
 
 
