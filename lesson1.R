@@ -325,8 +325,9 @@ print(summary(data))
 
 # Base R plotting
 plot(
-  data$mpg, 
-  data$hp, main = "MPG vs Horsepower", 
+  mtcars$mpg, 
+  mtcars$hp, 
+  main = "MPG vs Horsepower", 
   xlab = "MPG", 
   ylab = "Horsepower", 
   col = "blue"
