@@ -284,6 +284,27 @@ dimnames(m) <- list(c("a", "b"), c("c", "d"))
 
 
 
+# 9. Missing Values -------------------------------------------------------
+
+
+
+# Missing values are denoted by NA, NaN, or Inf.
+is.na(NA)
+is.nan(NaN)
+is.infinite(Inf)
+
+x <- c(1, 2, NA, 4, 5)
+is.na(x)
+is.nan(x)
+is.infinite(x)
+
+x <- c(1,2, NA, 0/0, 4, 1/0)
+is.na(x)
+is.nan(x)
+is.infinite(x)
+
+
+
 
 
 
