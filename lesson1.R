@@ -191,9 +191,12 @@ x <- as.list(x)
 
 lst <- list(Name = "Alice", Age = 25, Scores = c(90, 95, 85))
 
-# Matrices
-mat <- matrix(1:9, nrow=3, ncol=3)
-mat
+# Indexing a list
+lst$Scores
+lst["Scores"]
+lst[["Scores"]]
+lst[3]
+lst[[3]]
 
 # Data Frames
 df <- data.frame(Name = c("Alice", "Bob"), Age = c(25, 30))
