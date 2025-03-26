@@ -130,6 +130,10 @@ vec <- c(vec, 6)
 seq(10)
 seq(1, 10, 0.1)
 
+# Indexing a vector
+vec <- c("a", "b", "c", "d", "e")
+vec[3]
+
 
 vec
 vec[2] # Access second element
