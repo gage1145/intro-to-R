@@ -198,11 +198,8 @@ lst[["Scores"]]
 lst[3]
 lst[[3]]
 
-# Data Frames
-df <- data.frame(Name = c("Alice", "Bob"), Age = c(25, 30))
-df
-df$Name # Access column
-View(df)
+# Lists can be recursive
+lst <- list(list(list(list())))
 
 
 
