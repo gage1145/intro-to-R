@@ -319,7 +319,7 @@ print(summary(data))
 
 
 
-# 6. Basic Data Visualization ---------------------------------------------
+# 11. Basic Data Visualization --------------------------------------------
 
 
 
@@ -340,7 +340,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
 
 
 
-# 7. Wrap-Up and Next Steps -----------------------------------------------
+# 12. Wrap-Up and Next Steps ----------------------------------------------
 
 
 
@@ -357,7 +357,10 @@ my_function <- function(name) {
 my_function("Alice")
 
 
-# 8. Exercises ------------------------------------------------------------
+
+# 13. Exercises -----------------------------------------------------------
+
+
 
 # 1. Create a new data frame with three columns: "ID", "Name", and "Score".
 #    Fill it with at least three rows of data.
