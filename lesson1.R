@@ -203,7 +203,10 @@ lst <- list(list(list(list())))
 
 
 
-# 5. Importing and Exploring Data -----------------------------------------
+# 7. Basic Data Structures: Factors ---------------------------------------
+
+
+
 
 
 
