@@ -111,9 +111,20 @@ vector("complex", 10)
 
 # Making vectors with the c() function.
 vec <- c(1L, 2L, 3L, 4L, 5L)
-# Alternatively
-vec <- 1:5
-typeof(vec)
+# Access second element
+vec[2]
+# Scaling
+vec * 2
+# Adding scalars
+vec + 0.1
+# Get max value
+max(vec)
+# Get the sum of the vector
+sum(vec)
+
+# Adding elements to a vector
+vec <- c(vec, 6)
+
 
 vec
 vec[2] # Access second element
