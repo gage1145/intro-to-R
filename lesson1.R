@@ -254,6 +254,14 @@ nrow(df_)
 ncol(df_)
 names(df_)
 
+# Accessing a column
+
+# Access a column as a list
+df_["id"]
+# Access a column as an atomic vector.
+df_$id
+df_[["id"]]
+
 
 
 
