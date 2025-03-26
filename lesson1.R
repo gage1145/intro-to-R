@@ -125,6 +125,11 @@ sum(vec)
 # Adding elements to a vector
 vec <- c(vec, 6)
 
+# Creating a vector as a sequence of numbers
+1:10
+seq(10)
+seq(1, 10, 0.1)
+
 
 vec
 vec[2] # Access second element
