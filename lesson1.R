@@ -245,6 +245,15 @@ is.list(df_)
 # Check that the list is a data.frame.
 class(df_)
 
+# Useful functions for data frames.
+str(df_)
+head(df_)
+tail(df_)
+dim(df_)
+nrow(df_)
+ncol(df_)
+names(df_)
+
 
 
 
