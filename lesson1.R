@@ -240,6 +240,11 @@ unclass(fct)
 
 df_ <- data.frame(id = LETTERS[1:26], x = 1:26, y = rnorm(26), z = 1+2i)
 
+# Check that the data frame is actually a list.
+is.list(df_)
+# Check that the list is a data.frame.
+class(df_)
+
 
 
 
