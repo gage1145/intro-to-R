@@ -334,6 +334,7 @@ plot(
 )
 
 # Introduction to `ggplot2`
+# install.packages("ggplot2")
 library(ggplot2)
 ggplot(mtcars, aes(x = mpg, y = hp)) + 
   geom_point(color = "blue") + 
