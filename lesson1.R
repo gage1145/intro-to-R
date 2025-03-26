@@ -74,15 +74,19 @@ z <- x + y
 print(z)
 
 # Data types
-num_val <- 10.5
-int_val <- 10L
-char_val <- "Hello"
-bool_val <- TRUE
+num_var <- 10.5
+int_var <- 10L
+chr_var <- "Hello"
+log_var <- TRUE
+com_var <- 1 + 1i
+fun_var <- function() return()
 
-typeof(num_val)
-typeof(int_val)
-typeof(char_val)
-typeof(bool_val)
+typeof(num_var)
+typeof(int_var)
+typeof(chr_var)
+typeof(log_var)
+typeof(com_var)
+typeof(fun_var)
 
 
 
