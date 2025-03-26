@@ -134,6 +134,16 @@ seq(1, 10, 0.1)
 vec <- c("a", "b", "c", "d", "e")
 vec[3]
 
+# Vectors can not have multiple data types. Attempts at this will coerce certain
+# data types into another.
+# The coersion rule goes logical -> integer -> numeric -> complex -> character
+c(10L, 10.1)
+c(10, "a")
+c("a", TRUE)
+c(10+0i, 10L)
+
+
+
 
 vec
 vec[2] # Access second element
