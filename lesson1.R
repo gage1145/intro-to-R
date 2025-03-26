@@ -176,14 +176,20 @@ rbind(x,y)
 
 
 
+# In R lists act as containers. Unlike atomic vectors, its contents are not 
+# restricted to a single mode and can encompass any data type. Lists are 
+# sometimes called recursive vectors, because a list can contain other lists. 
+# This makes them fundamentally different from atomic vectors.
 
-vec
-vec[2] # Access second element
+# Create a list using list().
+lst <- list(1L, "a", TRUE, 10.1, 1+10i)
 
-# Lists
+# Coerce a vector into a list.
+x <- 1:10
+x <- as.list(x)
+
+
 lst <- list(Name = "Alice", Age = 25, Scores = c(90, 95, 85))
-print(lst)
-print(lst$Scores)
 
 # Matrices
 mat <- matrix(1:9, nrow=3, ncol=3)
