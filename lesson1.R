@@ -172,6 +172,10 @@ cbind(x,y)
 # or
 rbind(x,y)
 
+# Perform operations on matrices
+matrix(1:9, 3, 3) * matrix(9:1, 3, 3)
+matrix(1:9, 3, 3) %*% matrix(9:1, 3, 3)
+
 
 
 # 6. Basic Data Structures: Lists -----------------------------------------
