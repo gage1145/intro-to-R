@@ -67,11 +67,12 @@ log10(10)
 # - character (e.g, "a", "swc")
 
 
-# Assigning variables (`<-` vs. `=`)
+# Assigning variables (`<-`, `=`, `->`, and assign())
 x <- 10
 y = 5
 z <- x + y
-print(z)
+x + y -> x
+assign("x", 23)
 
 # Data types
 num_var <- 10.5
