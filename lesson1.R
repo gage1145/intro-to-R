@@ -203,6 +203,10 @@ lst$Scores
 lst[3]
 lst[[3]]
 
+# Practical use of lists
+model <- lm(mpg ~ hp, data = mtcars)
+plot(model)
+
 # Lists can be recursive
 lst <- list(list(list(list())))
 
