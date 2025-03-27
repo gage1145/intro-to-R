@@ -344,9 +344,27 @@ plot(
 
 # Introduction to `ggplot2`
 library(ggplot2)
+
 ggplot(mtcars, aes(x = mpg, y = hp)) + 
   geom_point(color = "blue") + 
   theme_minimal()
+
+ggplot(mtcars, aes(x = mpg)) + 
+  geom_histogram(binwidth = 5, fill = "blue")
+
+ggplot(mtcars, aes(x = mpg)) + 
+  geom_density(fill = "blue", alpha = 0.5)
+
+ggplot(mtcars, aes(x = factor(cyl))) + 
+  geom_bar(fill = "red")
+
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "red")
+
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
+  facet_wrap(~cyl)
 
 
 
