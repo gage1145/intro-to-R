@@ -139,16 +139,9 @@ seq(10)
 seq(1, 10, 0.1)
 
 # Indexing a vector
-vec <- c("a", "b", "c", "d", "e")
+vec <- c(14, 205, 302, 40, 29)
 vec[3]
-
-# Vectors can not have multiple data types. Attempts at this will coerce certain
-# data types into another.
-# The coersion rule goes logical -> integer -> numeric -> complex -> character
-c(10L, 10.1)
-c(10, "a")
-c("a", TRUE)
-c(10+0i, 10L)
+vec[vec > 200]
 
 
 
