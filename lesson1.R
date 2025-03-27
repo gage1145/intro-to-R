@@ -190,12 +190,16 @@ x <- 1:10
 x <- as.list(x)
 
 
-lst <- list(Name = "Alice", Age = 25, Scores = c(90, 95, 85))
+lst <- list(Name = "Alice", Age = 15, Scores = c(90, 95, 85, 100))
 
 # Indexing a list
-lst$Scores
+
+# Single [] returns an object of the same class
 lst["Scores"]
+
+# Double [[]] and $ extracts a single element from a list.
 lst[["Scores"]]
+lst$Scores
 lst[3]
 lst[[3]]
 
