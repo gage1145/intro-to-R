@@ -88,6 +88,14 @@ typeof(log_var)
 typeof(com_var)
 typeof(fun_var)
 
+# Vectors can not have multiple data types. Attempts at this will coerce certain
+# data types into another.
+# The coersion rule goes logical -> integer -> numeric -> complex -> character
+c(TRUE, 10L) |> typeof()
+c(10L, 10.1) |> typeof()
+c(10, 10+1i) |> typeof()
+c(10+1i, "a") |> typeof()
+
 
 
 # 4. Basic Data Structures: Vectors ---------------------------------------
