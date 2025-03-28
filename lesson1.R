@@ -67,11 +67,12 @@ log10(10)
 # - character (e.g, "a", "swc")
 
 
-# Assigning variables (`<-` vs. `=`)
+# Assigning variables (`<-`, `=`, `->`, and assign())
 x <- 10
 y = 5
 z <- x + y
-print(z)
+x + y -> x
+assign("x", 23)
 
 # Data types
 num_var <- 10.5
@@ -87,6 +88,14 @@ typeof(chr_var)
 typeof(log_var)
 typeof(com_var)
 typeof(fun_var)
+
+# Vectors can not have multiple data types. Attempts at this will coerce certain
+# data types into another.
+# The coersion rule goes logical -> integer -> numeric -> complex -> character
+c(TRUE, 10L) |> typeof()
+c(10L, 10.1) |> typeof()
+c(10, 10+1i) |> typeof()
+c(10+1i, "a") |> typeof()
 
 
 
@@ -131,16 +140,9 @@ seq(10)
 seq(1, 10, 0.1)
 
 # Indexing a vector
-vec <- c("a", "b", "c", "d", "e")
+vec <- c(14, 205, 302, 40, 29)
 vec[3]
-
-# Vectors can not have multiple data types. Attempts at this will coerce certain
-# data types into another.
-# The coersion rule goes logical -> integer -> numeric -> complex -> character
-c(10L, 10.1)
-c(10, "a")
-c("a", TRUE)
-c(10+0i, 10L)
+vec[vec > 200]
 
 
 
@@ -170,6 +172,10 @@ cbind(x,y)
 # or
 rbind(x,y)
 
+# Perform operations on matrices
+matrix(1:9, 3, 3) * matrix(9:1, 3, 3)
+matrix(1:9, 3, 3) %*% matrix(9:1, 3, 3)
+
 
 
 # 6. Basic Data Structures: Lists -----------------------------------------
@@ -189,14 +195,22 @@ x <- 1:10
 x <- as.list(x)
 
 
-lst <- list(Name = "Alice", Age = 25, Scores = c(90, 95, 85))
+lst <- list(Name = "Alice", Age = 15, Scores = c(90, 95, 85, 100))
 
 # Indexing a list
-lst$Scores
+
+# Single [] returns an object of the same class
 lst["Scores"]
+
+# Double [[]] and $ extracts a single element from a list.
 lst[["Scores"]]
+lst$Scores
 lst[3]
 lst[[3]]
+
+# Practical use of lists
+model <- lm(mpg ~ hp, data = mtcars)
+plot(model)
 
 # Lists can be recursive
 lst <- list(list(list(list())))
@@ -336,9 +350,27 @@ plot(
 # Introduction to `ggplot2`
 # install.packages("ggplot2")
 library(ggplot2)
+
 ggplot(mtcars, aes(x = mpg, y = hp)) + 
   geom_point(color = "blue") + 
   theme_minimal()
+
+ggplot(mtcars, aes(x = mpg)) + 
+  geom_histogram(binwidth = 5, fill = "blue")
+
+ggplot(mtcars, aes(x = mpg)) + 
+  geom_density(fill = "blue", alpha = 0.5)
+
+ggplot(mtcars, aes(x = factor(cyl))) + 
+  geom_bar(fill = "red")
+
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "red")
+
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
+  facet_wrap(~cyl)
 
 
 
